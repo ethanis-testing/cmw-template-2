@@ -12,3 +12,4 @@ runs:
       with:
         path: ${{ inputs.path }}
     - run: ls -al ${{ inputs.path }}
+      shell: bash
