@@ -1,14 +1,13 @@
 name: "checkin' out"
+description: "check out source code"
 inputs:
   path:
-    description: 'Where to check out source code'
+    description: "Where to check out source code"
     required: false
     default: ${{ github.workspace }}
 runs:
   using: composite
   steps:
-    - run: echo Hello ${{ inputs.who-to-greet }}.
-      shell: bash
     - uses: actions/checkout@v2
       with:
         path: ${{ inputs.path }}
