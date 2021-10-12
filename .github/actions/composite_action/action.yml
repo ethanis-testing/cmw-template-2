@@ -1,0 +1,6 @@
+name: composite_action
+runs:
+  using: composite
+  steps:
+  - run: echo 'You say goodbye.'
+  - run: echo 'And I say hello.'
